@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lks.dao.UserRoleMapper">
+  <resultMap id="BaseResultMap" type="com.lks.bean.UserRole">
+    <id column="rm_id" jdbcType="INTEGER" property="rmId" />
+    <result column="user1_id" jdbcType="INTEGER" property="user1Id" />
+    <result column="role1_id" jdbcType="INTEGER" property="role1Id" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    rm_id, user1_id, role1_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from auth_userrole
+    where rm_id = #{rmId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from auth_userrole
+    where rm_id = #{rmId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.lks.bean.UserRole">
+    insert into auth_userrole (rm_id, user1_id, role1_id
+      )
+    values (#{rmId,jdbcType=INTEGER}, #{user1Id,jdbcType=INTEGER}, #{role1Id,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.lks.bean.UserRole">
+    insert into auth_userrole
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="rmId != null">
+        rm_id,
+      </if>
+      <if test="user1Id != null">
+        user1_id,
+      </if>
+      <if test="role1Id != null">
+        role1_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="rmId != null">
+        #{rmId,jdbcType=INTEGER},
+      </if>
+      <if test="user1Id != null">
+        #{user1Id,jdbcType=INTEGER},
+      </if>
+      <if test="role1Id != null">
+        #{role1Id,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lks.bean.UserRole">
+    update auth_userrole
+    <set>
+      <if test="user1Id != null">
+        user1_id = #{user1Id,jdbcType=INTEGER},
+      </if>
+      <if test="role1Id != null">
+        role1_id = #{role1Id,jdbcType=INTEGER},
+      </if>
+    </set>
+    where rm_id = #{rmId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lks.bean.UserRole">
+    update auth_userrole
+    set user1_id = #{user1Id,jdbcType=INTEGER},
+      role1_id = #{role1Id,jdbcType=INTEGER}
+    where rm_id = #{rmId,jdbcType=INTEGER}
+  </update>
+</mapper>
