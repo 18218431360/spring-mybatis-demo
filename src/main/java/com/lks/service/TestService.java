@@ -17,6 +17,12 @@ public class TestService {
         arrayList.forEach(item->{
             System.out.println(item);
         });
+        HashMap<Object, Object> hashMap = new HashMap<>();
+        hashMap.put(1,1);
+        hashMap.forEach((k,v)->{
+            System.out.println(k);
+            System.out.println(v);
+        });
         System.out.println(testService);
     }
 }
