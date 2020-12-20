@@ -20,16 +20,8 @@ public class TestService {
             System.out.println(item);
         });
         HashMap<Object, Object> hashMap = new HashMap<>();
-        hashMap.put("wq", 1);
-        hashMap.put("sd", 2);
-        hashMap.put("as", 2);
-        hashMap.put("ad", 2);
-        hashMap.put("12", 2);
-        hashMap.put("13", 2);
-        hashMap.put("14", 2);
-        hashMap.put("15", 2);
-        hashMap.put("ad", 2);
-        hashMap.put("ad", 2);
+        hashMap.put("1", 1);
+        hashMap.put("2", 2);
         hashMap.forEach((k,v)->{
             System.out.println(k);
             System.out.println(v);
