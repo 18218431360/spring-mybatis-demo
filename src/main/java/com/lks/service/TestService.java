@@ -37,6 +37,9 @@ public class TestService {
         hashMap.put(2, 2);
         hashMap.put(2, 2);
         hashMap.put(2, 2);
+        hashMap.put(5, 2);
+        hashMap.put(5, 2);
+        hashMap.put(5, 2);
         hashMap.put(2, 2);
         hashMap.put(2, 2);
         hashMap.put(2, 2);
