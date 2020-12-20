@@ -24,6 +24,8 @@ public class TestService {
         hashMap.put("sd", 2);
         hashMap.put("as", 2);
         hashMap.put("ad", 2);
+        hashMap.put("ad", 2);
+        hashMap.put("ad", 2);
         hashMap.forEach((k,v)->{
             System.out.println(k);
             System.out.println(v);
