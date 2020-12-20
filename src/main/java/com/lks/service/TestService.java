@@ -1,5 +1,8 @@
 package com.lks.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TestService {
 
     public static void main(String[] args) {
@@ -10,9 +13,9 @@ public class TestService {
         arrayList.add(2);
         arrayList.add(3);
         arrayList.add(4);
-        arrayList.ForEach(item->{
+        arrayList.forEach(item->{
             System.out.println(item);
-        })
+        });
         System.out.println(testService);
     }
 }
