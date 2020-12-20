@@ -11,13 +11,11 @@ public class TestService {
         String test = "test";
         String testService = "123";
         List<Integer> arrayList = new ArrayList<>();
+        arrayList.add(1);
+        arrayList.add(1);
+        arrayList.add(1);
         arrayList.forEach(item->{
             System.out.println(item);
-        });
-        HashMap<Object, Object> hashMap = new HashMap<>();
-        hashMap.forEach((k,v)->{
-            System.out.println(k);
-            System.out.println(v);
         });
         System.out.println(testService);
     }
