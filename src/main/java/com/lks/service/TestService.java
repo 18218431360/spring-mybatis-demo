@@ -34,6 +34,10 @@ public class TestService {
         hashMap.put(2, 2);
         hashMap.put(2, 2);
         hashMap.put(2, 2);
+        hashMap.put(5, 2);
+        hashMap.put(5, 2);
+        hashMap.put(6, 2);
+        hashMap.put(6, 2);
         hashMap.forEach((k,v)->{
             System.out.println(k);
             System.out.println(v);
