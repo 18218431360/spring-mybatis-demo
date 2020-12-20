@@ -24,6 +24,9 @@ public class TestService {
         arrayList.add(11);
         arrayList.add(11);
         arrayList.add(11);
+        arrayList.add(13);
+        arrayList.add(13);
+        arrayList.add(13);
         arrayList.forEach(item->{
             System.out.println(item);
         });
