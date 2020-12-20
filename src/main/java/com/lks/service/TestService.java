@@ -22,6 +22,8 @@ public class TestService {
         });
         HashMap<Object, Object> hashMap = new HashMap<>();
         hashMap.put(1,1);
+        hashMap.put(2,2);
+        hashMap.put(3,3);
         hashMap.forEach((k,v)->{
             System.out.println(k);
             System.out.println(v);
