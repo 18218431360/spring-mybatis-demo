@@ -8,6 +8,9 @@ public class TestGitOperation {
         String ab = "ab";
         String ac = "ac";
         String test3 = "2344";
+        String adas = "dadsa";
+        String test4 = "345345";
+        String qwe = "asad";
         System.out.println();
     }
 }
