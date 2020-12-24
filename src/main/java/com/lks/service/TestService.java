@@ -12,11 +12,7 @@ public class TestService {
         String testService = "123";
         List<Integer> arrayList = new ArrayList<>();
         arrayList.add(1);
-        arrayList.add(1);
-        arrayList.add(1);
-        arrayList.add(2);
-        arrayList.add(2);
-        arrayList.add(2);
+        arrayList.add(3);
         arrayList.forEach(item->{
             System.out.println(item);
         });
