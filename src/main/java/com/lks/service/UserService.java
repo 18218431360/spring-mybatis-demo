@@ -10,6 +10,7 @@ public class UserService {
         course.setName("计算机组成原理");
         course.setUrl("http://www.baidu.com");
         course.setType(1);
+        String test1 = "love you too !";
         System.out.println(course.toString());
     }
 }
