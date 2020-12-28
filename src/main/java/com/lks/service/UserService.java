@@ -8,9 +8,10 @@ public class UserService {
         Course course = new Course();
         course.setId(1);
         course.setName("计算机组成原理");
-        course.setUrl("http://www.jd.com");
+        course.setUrl("http://www.baidu.com");
         course.setType(1);
         String test = "love you !";
+        String test1 = "love you too !";
         System.out.println(course.toString());
     }
 }
