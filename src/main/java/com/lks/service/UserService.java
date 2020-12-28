@@ -12,6 +12,7 @@ public class UserService {
         course.setType(1);
         String test = "love you !";
         String test1 = "love you too !";
+        String test2 = "2";
         System.out.println(course.toString());
     }
 }
