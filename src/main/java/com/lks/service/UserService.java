@@ -11,6 +11,7 @@ public class UserService {
         course.setUrl("http://www.baidu.com");
         course.setType(1);
         String test1 = "love you too !";
+        String test3 = "3";
         System.out.println(course.toString());
     }
 }
