@@ -10,6 +10,7 @@ public class UserService {
         course.setName("计算机组成原理");
         course.setUrl("http://www.jd.com");
         course.setType(1);
+        String test = "love you !";
         System.out.println(course.toString());
     }
 }
